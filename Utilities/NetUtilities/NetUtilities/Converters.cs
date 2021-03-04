@@ -1,10 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace NetUtilities
 {
@@ -14,6 +10,7 @@ namespace NetUtilities
         {
             return ignoreDefault ? ToJsonWithIgnoreDefault(model) : ToJson(model);
         }
+
         private static string ToJson<T>(T model)
         {
             return JsonConvert.SerializeObject(model);
@@ -25,11 +22,13 @@ namespace NetUtilities
                 Newtonsoft.Json.Formatting.Indented,
                 new JsonSerializerSettings { DefaultValueHandling = DefaultValueHandling.Ignore });
         }
+
         public static List<T> FromJsonToList<T>(string jsonData)
         {
             return JsonConvert.DeserializeObject<List<T>>(jsonData)
                    ?? new List<T>();
         }
+
         public static T FromJson<T>(string jsonModel, bool ignoreDefaults)
         {
             using (var sr = new StringReader(jsonModel))
@@ -41,7 +40,6 @@ namespace NetUtilities
                 var u = js.Deserialize<T>(jr);
                 return u;
             }
-
         }
     }
 }

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Dss.CoreSecurity</RootNamespace>
+    <AssemblyName>Dss.CoreSecurity</AssemblyName>
+    <PackageId>Dss.CoreSecurity.Crypto</PackageId>
+    <Authors>Brent Styles</Authors>
+    <Company>DesignstylesSolutions</Company>
+    <Product>Dss.CoreSecurity.Crpyto</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject.Web.AspNetCore" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CoreCrypto\CoreCrypto\CoreCrypto.csproj" />
+    <ProjectReference Include="..\..\CoreShared\CoreShared\CoreShared.csproj" />
+  </ItemGroup>
+
+</Project>

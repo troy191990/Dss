@@ -1,4 +1,4 @@
-﻿namespace Dss.NetShared
+﻿namespace Dss.CoreShared
 {
     public interface ICrypto
     {

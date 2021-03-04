@@ -1,6 +1,8 @@
-﻿using Dss.NetShared;
+﻿using Dss.CoreCrypto;
+using Dss.CoreSecurity.Ninject_Core;
+using Dss.CoreShared;
 
-namespace Dss.NetSecurity
+namespace Dss.CoreSecurity
 {
     public class Crypto
     {
@@ -9,7 +11,7 @@ namespace Dss.NetSecurity
 
         public Crypto(ICrpytoParams parameters)
         {
-            _crypto = CryptoInjectionModule.GetCrypto();
+            _crypto = CryptoInjectModuleCore.GetCrypto();
             _parameters = parameters;
         }
 

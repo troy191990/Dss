@@ -1,6 +1,6 @@
-﻿using Dss.NetShared;
+﻿using Dss.CoreShared;
 
-namespace Dss.NetSecurity
+namespace Dss.CoreSecurity
 {
     public class CryptoParams : ICrpytoParams
     {

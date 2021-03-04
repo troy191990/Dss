@@ -1,9 +1,9 @@
-﻿using Dss.NetShared;
+﻿using Dss.CoreShared;
 using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Dss.NetCrypto
+namespace Dss.CoreCrypto
 {
     public class CryptoWork : IDisposable
     {

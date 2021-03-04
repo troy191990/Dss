@@ -1,6 +1,6 @@
-﻿using Dss.NetShared;
+﻿using Dss.CoreShared;
 
-namespace Dss.NetCrypto
+namespace Dss.CoreCrypto
 {
     public class CryptApp : ICrypto
     {

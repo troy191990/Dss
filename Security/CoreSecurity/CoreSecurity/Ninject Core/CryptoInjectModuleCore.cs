@@ -1,10 +1,13 @@
-﻿using Dss.NetCrypto;
-using Dss.NetShared;
+﻿using Dss.CoreCrypto;
+using Dss.CoreShared;
 using Ninject;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Dss.NetSecurity
+namespace Dss.CoreSecurity.Ninject_Core
 {
-    public class CryptoInjectionModule
+    public class CryptoInjectModuleCore
     {
         public static ICrypto GetCrypto()
         {
