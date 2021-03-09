@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Dss.NetSecurity.Crypto</id>
+    <version>5.0</version>
+    <title>Dss.NetSecurity.Crypto</title>
+    <authors>Design Styles Solution</authors>
+    <owners>Design Styles Solution</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <releaseNotes>Allow calling application to provide key/passphrase into crypto application. Includes project dependecies</releaseNotes>
+    <copyright></copyright>
+    <tags>Dss.NetSecurity</tags>
+  </metadata>
+</package>

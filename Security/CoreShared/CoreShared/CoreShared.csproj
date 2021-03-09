@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>Dss.CoreShared</AssemblyName>
     <RootNamespace>Dss.CoreShared</RootNamespace>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

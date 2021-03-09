@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Dss.CoreCrypto</RootNamespace>
     <AssemblyName>Dss.CoreCrypto</AssemblyName>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

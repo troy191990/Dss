@@ -1,0 +1,15 @@
+move nuget.exe into the folder with the csproj file that you want to create a nuget package for.
+
+run nuget spec 
+this will give you a file with defaults to fill in. 
+
+once defaults have been filled in
+then run
+nuget pack <your project file name>.csproj -IncludeReferencedProjects
+e.g 
+the IncludeReferencedProjects includes all local project file references as well
+
+upload .nupkg onto nuget and wait for it to be verified. 
+
+
+https://www.nuget.org/packages/Dss.NetSecurity.Crypto/

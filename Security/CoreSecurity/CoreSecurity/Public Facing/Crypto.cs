@@ -1,17 +1,20 @@
-﻿using Dss.CoreCrypto;
-using Dss.CoreSecurity.Ninject_Core;
+﻿using Dss.CoreSecurity.Ninject_Core;
 using Dss.CoreShared;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Dss.CoreSecurity
 {
     public class Crypto
     {
-        private ICrypto _crypto;
-        private ICrpytoParams _parameters;
+        private readonly ICrypto _crypto;
+        private readonly ICrpytoParams _parameters;
 
         public Crypto(ICrpytoParams parameters)
         {
-            _crypto = CryptoInjectModuleCore.GetCrypto();
+            var serviceCollection = new ServiceCollection();
+            CryptoInjectModuleCore.ConfigureServices(serviceCollection);
+            var serviceProvider = serviceCollection.BuildServiceProvider();
+            _crypto = serviceProvider.GetService<ICrypto>();
             _parameters = parameters;
         }
 
